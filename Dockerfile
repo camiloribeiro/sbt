@@ -19,8 +19,7 @@ RUN apt-get update
 RUN apt-get install -y scala
 RUN apt-get install -y sbt
 
-RUN apt-get install --reinstall -y language-pack-en-base
-ENV LC_ALL en_GB.UTF-8
+ENV LC_ALL C.UTF-8
 
 WORKDIR /app
 RUN sbt clean
